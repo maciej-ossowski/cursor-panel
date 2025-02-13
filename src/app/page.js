@@ -14,6 +14,7 @@ import { Bar } from 'react-chartjs-2';
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import { toast, Toaster } from 'react-hot-toast';
+import Link from 'next/link';
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -605,7 +606,12 @@ export default function Home() {
                     </svg>
                   )}
                 </button>
-                <button className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors">Settings</button>
+                <Link 
+                  href="/settings"
+                  className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
+                >
+                  Settings
+                </Link>
                 <button className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors">Share</button>
                 <button className="px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded-md hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors">Save</button>
               </div>
